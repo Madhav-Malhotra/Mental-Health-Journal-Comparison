@@ -13,10 +13,10 @@ api = Api(app)
 parser = reqparse.RequestParser()
 parser.add_argument('entries', required=True, action='append', help="Need at least two text entries")
 
-w2v = load("w2v9.joblib")
-weights_reg = load("weights9_reg.joblib")
-weights_rev = load("weights9_rev.joblib")
-tokenizer = load("./english.pickle")
+w2v = load("./data/w2v9.joblib")
+weights_reg = load("./data/weights9_reg.joblib")
+weights_rev = load("./data/weights9_rev.joblib")
+tokenizer = load("./data/english.pickle")
 
 
 # ===================== Build Model ============================== #
